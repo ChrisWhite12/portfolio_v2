@@ -1,6 +1,4 @@
-import React, {Component} from 'react'
-import Icon from './Icon'
-import ProjectItem from './ProjectItem'
+import React from 'react'
 import "../css/_projects.scss"
 
 const Projects = () => {
