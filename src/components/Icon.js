@@ -18,7 +18,7 @@ const Icon = ({img, idName, name}) => {
                 'animation': 'icon_hover_out 1s linear 0s 1 normal both'
             });            
         }
-    },[icons,iconsOff])
+    },[name,icons,iconsOff])
 
     return (
         <img src={img} alt={name} id={idName} style={iconStyle}></img>
