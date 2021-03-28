@@ -10,6 +10,7 @@ const Project = ({data}) => {
             data: data["skills"]
         })
     }
+    
     const handleMouseLeave = () => {
         dispatch({
             type: "setIconsOff",
@@ -18,12 +19,12 @@ const Project = ({data}) => {
     }
     
     return (
-        <div className="project_item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+        <div className="project_item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <img src={data["img"]} alt="Project" className="project_img"></img>
             <div className="project_description">
                 <h2 className="project_title">{data["title"]}</h2>
                 <p className="project_text">{data["desc"]}</p>
-                <a href={data["github"]}>GitHub</a>
+                {data["github"] ? <a href={data["github"]}>GitHub</a> : <p></p>}
                 {(data["livesite"])?<a href={data["livesite"]}>Live Site</a>: <p></p>}
             </div>
         </div>

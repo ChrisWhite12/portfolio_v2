@@ -14,11 +14,12 @@ const Icon = ({img, idName, name}) => {
             });
         }
         else if(iconsOff.includes(name)){
+            // console.log('mouse leave ', name)
             setIconStyle({
                 'animation': 'icon_hover_out 1s linear 0s 1 normal both'
             });            
         }
-    },[name,icons,iconsOff])
+    },[icons,iconsOff,name])
 
     return (
         <img src={img} alt={name} id={idName} style={iconStyle}></img>

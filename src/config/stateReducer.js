@@ -1,5 +1,6 @@
 /* eslint-disable */
 export default function (state, action) {
+    // console.log(state)
     switch(action.type) {
         case "setIcons": {
             return {

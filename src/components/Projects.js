@@ -1,20 +1,21 @@
 import React from 'react'
 import "../css/_projects.scss"
 import Project from './Project'
+// import {useGlobalState} from '../config/store';
 
 import Icon from './Icon';
 
 const Projects = () => {
     const data = {
         "project1":{
-            "img": "./App1.png",
+            "img": "./project_img/App1.png",
             "title": "Subway Trip Planner",
             "desc": "Ruby terminal application made for a Coder Academy assignment. The application is designed it simulate a subway network and calculate paths for commuters to take. The user can enter origin, destination stations and time to leave and the application returns the path to take with which stations to change at and how many minutes to wait at each station.",
             "github": "https://github.com/ChrisWhite12/Subway-Trip-Planner",
             "skills": ["ruby"]
         },
         "project2":{
-            "img": "./rails_pro.jpg",
+            "img": "./project_img/rails_pro.jpg",
             "title": "Hotel DB",
             "desc": "Rails application made for a Coder Academy assignment. The application is similar to other hotel database websites where owners can post their listing with a number of rooms and manage bookings. Customers can search for a booking by inputing the location, date and no. of people.",
             "github": "https://github.com/ChrisWhite12/HotelDB_Rails",
@@ -22,14 +23,37 @@ const Projects = () => {
             "skills": ["ruby","html","css"]
         },
         "project3":{
-            "img": "./Covid.png",
+            "img": "./project_img/Covid.png",
             "title": "Covid-19 Graph",
             "desc": "Graph showing COVID-19 cases for Australia. Javascript is used to get the json file and display the information on a graph using chart.js. Pages shows both linear cases against time and logarithmic daily against cumulative.",
             "github": "https://github.com/ChrisWhite12/Covid_19_graph",
             "livesite": "https://chriswhite12.github.io/Covid_19_graph/",
             "skills": ["js", "html", "css"]
+        },
+        "project4": {
+            "img": "./project_img/App_dash.jpg",
+            "title": "Client Portal",
+            "desc": "Client portal App for the MERN assessment. The MVP for the portal is that clients will be able to see their upcoming appointments, submit ticket requests to administration to change their appointments, view and edit their personal details. The website isn’t active, the test database was paid monthly and not being used at the moment.",
+            "github": "https://github.com/ChrisWhite12/clientPortalApp_BE",
+            "skills": ["mongo", "react","js", "html", "css"]
+        },
+        "project5": {
+            "title": "Internship",
+            "desc": "The internship at Dingo consisted of working with 2 other students from Coder Academy on a proof-of-concept application. The tech stack was MERN which we had learnt in Coder Academy. The tasks that I worked on were CI/CD in gitlab, handling API data in backend, processing data and delivering it to the frontend, testing backend using Mocha.js and Chai.js and testing frontend with react-testing-library",
+            "skills": ["mongo", "react", "js", "html", "css"]
         }
     }
+
+
+    // const {dispatch} = useGlobalState()
+
+    // const handleMouseLeave = () => {
+    //     console.log('mouseOut projects')
+    //     dispatch({
+    //         type: "setIconsOff",
+    //         data: ["mongo", "react", "js", "html", "css"]
+    //     })
+    // }
 
     return (
         
@@ -41,11 +65,14 @@ const Projects = () => {
                     <Icon img="./CSS-3-01.svg" name="css" idName="css_icon"/>
                     <Icon img="./HTML-5-01.svg" name="html" idName="html_icon"/>
                     <Icon img="./JavaScript-01.svg" name="js" idName="js_icon"/>
+                    <Icon img="./mongodb.svg" name="mongo" idName="mongo_icon"/>
+                    <Icon img="./react.svg" name="react" idName="react_icon"/>
                 </div>
                 <div className="project_list">
-                    <Project data={data["project1"]} />
+                    <Project data={data["project4"]} />
+                    <Project data={data["project5"]} />
                     <Project data={data["project2"]} />
-                    <Project data={data["project3"]} />
+                    <Project data={data["project1"]} />
                 </div>
         </div>
     )
