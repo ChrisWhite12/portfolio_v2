@@ -20,7 +20,7 @@ const Project = ({data}) => {
     
     return (
         <div className="project_item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img src={data["img"]} alt="Project" className="project_img"></img>
+            {data["img"] ? <img src={data["img"]} alt="Project" className="project_img"></img> : <p>No image</p>}
             <div className="project_description">
                 <h2 className="project_title">{data["title"]}</h2>
                 <p className="project_text">{data["desc"]}</p>

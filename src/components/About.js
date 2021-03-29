@@ -13,7 +13,7 @@ const About = () => {
                 complicated at the time, and then discovered over topics such as JS and Rails.</p>
                 <p>Chris’s strengths are his passion for React and JS. Outside of work, he likes 
                 to play video/board games and travel</p>
-                <p>My CV: <a href="./Resume.pdf">Link</a></p>
+                <p>My Resume: <a href="./Resume.pdf">Link</a></p>
             </div>
         </div>
     )
