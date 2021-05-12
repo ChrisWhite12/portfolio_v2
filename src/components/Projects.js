@@ -75,8 +75,10 @@ const Projects = () => {
                     <Icon img="./JavaScript-01.svg" name="js" idName="js_icon"/>
                     <Icon img="./mongodb.svg" name="mongo" idName="mongo_icon"/>
                     <Icon img="./react.svg" name="react" idName="react_icon"/>
+                    <Icon img="./redux.svg" name='redux' idName="redux_icon" />
                 </div>
                 <div className="project_list">
+                    <Project data={data["project6"]} />
                     <Project data={data["project4"]} />
                     <Project data={data["project5"]} />
                     <Project data={data["project2"]} />
