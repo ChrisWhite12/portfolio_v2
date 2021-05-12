@@ -41,6 +41,14 @@ const Projects = () => {
             "title": "Internship",
             "desc": "The internship at Dingo consisted of working with 2 other students from Coder Academy on a proof-of-concept application. The tech stack was MERN which we had learnt in Coder Academy. The tasks that I worked on were CI/CD in gitlab, handling API data in backend, processing data and delivering it to the frontend, testing backend using Mocha.js and Chai.js and testing frontend with react-testing-library",
             "skills": ["mongo", "react", "js", "html", "css"]
+        },
+        "project6": {
+            "title": "Habit Tracker",
+            "desc": "React Native app that uses firebase and redux to store habit information and display it on a calendar. Authentication is handled by Firebase's Google Signin",
+            'skills': ['react', 'js', 'css', 'redux'],
+            "img": "./project_img/reactNative2.png",
+            "github": "https://github.com/ChrisWhite12/habit-tracker"
+        
         }
     }
 
